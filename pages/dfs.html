@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DFS Algorithm</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin: 40px;
+    }
+
+    #graphCanvas {
+      width: 600px;
+      height: 400px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    #output {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+      text-align: left;
+      width: 350px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Depth First Search (DFS)</h1>
+
+  <div class="grid">
+    <div>
+      <label for="nodeCount">Enter number of nodes:</label>
+      <input type="number" id="nodeCount" placeholder="e.g. 5" title="Number of nodes" />
+    </div>
+
+    <div>
+      <label for="edgesInput">Enter edges (u v per line):</label><br>
+      <textarea id="edgesInput" rows="6" cols="30" placeholder="Example:&#10;0 1&#10;1 2&#10;2 3"></textarea>
+    </div>
+
+    <div>
+      <label for="startNode">Enter starting node:</label>
+      <input type="number" id="startNode" placeholder="e.g. 0" title="Starting node" />
+    </div>
+
+    <div>
+      <button onclick="runDFS()">Run DFS</button>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <svg id="graphCanvas"></svg>
+    <div>
+      <h3>DFS Traversal Steps</h3>
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <script src="../algorithms/dfs.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graph Algorithm Visualizer</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .icon-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      padding: 15px;
+    }
+    .icon-box:hover {
+      transform: scale(1.05);
+    }
+    .icon-box img {
+      width: 80px;
+      height: 80px;
+    }
+    .icon-box p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <h1>Graph Algorithm Visualizer</h1>
+  <div class="grid-container">
+    <div class="icon-box">
+      <a href="pages/dfs.html">
+        <img src="assets/icons/dfs.png" alt="DFS">
+        <p>Depth First Search</p>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="pages/bfs.html">
+        <img src="assets/icons/bfs.png" alt="BFS">
+        <p>Breadth First Search</p>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="pages/dijkstra.html">
+        <img src="assets/icons/dijkstra.png" alt="Dijkstra">
+        <p>Dijkstra's Algorithm</p>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="pages/kruskal.html">
+        <img src="assets/icons/kruskal.png" alt="Kruskal">
+        <p>Kruskal's Algorithm</p>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="pages/prim.html">
+        <img src="assets/icons/prim.png" alt="Prim">
+        <p>Prim's Algorithm</p>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="pages/toposort.html">
+        <img src="assets/icons/topo.png" alt="Topo">
+        <p>Topological Sort</p>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="pages/bellmanFord.html">
+        <img src="assets/icons/bellman.png" alt="Bellman-Ford">
+        <p>Bellman-Ford</p>
+      </a>
+    </div>
+    <div class="icon-box">
+      <a href="pages/floydWarshall.html">
+        <img src="assets/icons/floyd.png" alt="Floyd-Warshall">
+        <p>Floyd-Warshall</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

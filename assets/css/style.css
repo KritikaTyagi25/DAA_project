@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+  
+  .icon-box {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    width: 120px;
+    cursor: pointer;
+  }
+  
+  .icon-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-box img {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .icon-box p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  

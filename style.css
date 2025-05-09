@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #f0f2f5;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 50px;
+  }
+  
+  .grid a img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+  }
+  
+  .grid a img:hover {
+    transform: scale(1.1);
+  }
+  
